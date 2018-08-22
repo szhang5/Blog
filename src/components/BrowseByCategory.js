@@ -24,7 +24,7 @@ const BrowseByCategory = ({ data: { loading, categories } }) => {
     );
   }
   return <h2>loading categories...</h2>;
-}
+};
 
 const Categories = gql`
  query categories {
