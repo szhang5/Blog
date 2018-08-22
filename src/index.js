@@ -7,7 +7,7 @@ import { ApolloProvider } from 'react-apollo'
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-const API = 'https://api-useast.graphcms.com/v1/cjl078g2y05mm01bnn407e40z/master';
+const API = process.env.REACT_APP_GRAPHCMS_API;
 
 const client = new ApolloClient({
  link: new HttpLink({ uri: API }),

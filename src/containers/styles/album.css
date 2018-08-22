@@ -1,0 +1,27 @@
+.landingDiv {
+	margin-right: 5%;
+}
+
+.content {
+	margin: 50px auto;
+}
+
+.rightContent, .leftContent {
+ background-color: none;
+ padding: 1rem;
+}
+
+.leftContent {
+	border-left: 1px solid #6890a5;
+}
+
+article h4 {
+	color: #6890a5;
+	text-align: right;
+	font-weight: lighter;
+	font-size: 16px;
+}
+
+article img {
+	width: 60%;
+}

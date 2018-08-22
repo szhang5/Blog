@@ -1,0 +1,99 @@
+
+.wrapper {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+/* Post Section */
+.post {
+  padding: 1rem;
+}
+
+.post hr{
+  color: gray;
+  margin-top: 2%;
+}
+
+.post h1 {
+  color: black;
+  font-size: 30px;
+}
+
+.post h2 {
+  color: black;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.post h4 {
+  color: gray;
+  font-size: 18px;
+  text-align: left;
+  letter-spacing: 1px;
+  margin-bottom: 5%;
+}
+
+.post p {
+  /*margin-top: 5%;*/
+  font-size: 18px;
+}
+
+.post table {
+  width:100%;
+  border-collapse: collapse;
+}
+
+.post thead {
+  text-align: center;
+  background-color: #a9c3d0;
+}
+
+.post td:nth-child(0){
+  width: 25%;
+}
+
+.post td:nth-child(1){
+  width: 20%;
+}
+
+.post table th, td {
+  border: 1px solid black;
+}
+
+.card img {
+ width: 100%;
+}
+
+.card{
+  transition: 0.3s;
+  width: 100%;
+  font-size: 14px;
+  margin: 50px auto;
+}
+
+.container {
+  padding: 2px 16px;
+  margin-bottom: 5%;
+}
+
+.btn {
+  background-color: transparent;
+  border: 1px solid black;
+  padding: .5rem 1rem;
+  float:right;
+  display: block;
+  font-weight: 700;
+  margin-right: 5%;
+}
+
+.btn:hover
+{
+  border: 1px solid #a9c3d0;
+  background-color: #a9c3d0;
+  color: white;
+  cursor: pointer;
+}
+
+.landingDiv {
+  margin-right: 5%;
+}

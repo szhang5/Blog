@@ -1,0 +1,28 @@
+.search {
+	font-size: 90%;
+	text-transform: uppercase;
+	text-align: right;
+	letter-spacing: 1px;
+	margin-right: 5%;
+	padding: 7px 0;
+	margin-bottom: 15%;
+}
+
+.searchDiv {
+	font-size: 90%;
+	text-transform: uppercase;
+	text-align: right;
+	letter-spacing: 1px;
+	border-bottom: 4px solid #a9c3d0;
+	padding: 7px 0;
+	margin-bottom: 5%;
+}
+
+.searchBox {
+	width: 100%;
+}
+
+input {
+	width: 100%;
+    padding: 3% 0;
+}

@@ -1,0 +1,25 @@
+.category {
+	font-size: 90%;
+	text-transform: uppercase;
+	text-align: right;
+	letter-spacing: 1px;
+	margin-right: 5%;
+	padding: 7px 0;
+	margin-bottom: 15%;
+}
+
+.categoryDiv {
+	font-size: 90%;
+	text-transform: uppercase;
+	text-align: right;
+	letter-spacing: 1px;
+	border-bottom: 4px solid #a9c3d0;
+	padding: 7px 0;
+	margin-bottom: 5%;
+}
+
+.categoryList p {
+	text-transform: capitalize;
+	color: black;
+}
+

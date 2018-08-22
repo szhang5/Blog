@@ -1,0 +1,18 @@
+/*html {
+	 background-image: url(/images/background.jpeg);
+}*/
+
+* {
+ box-sizing: border-box;
+ padding: 0;
+ margin: 0;
+}
+body {
+ background-color: #F4F4F4;
+}
+
+.mainDiv {
+	width: 85%;
+	margin: 0 auto;
+	background-image: linear-gradient(to top left, lightgray, white);
+}

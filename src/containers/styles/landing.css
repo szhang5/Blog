@@ -1,0 +1,65 @@
+.content {
+  margin: 50px auto;
+}
+
+.rightContent, .leftContent {
+  background-color: none;
+  padding: 1rem;
+}
+
+.leftContent {
+  border-left: 1px solid #6890a5;
+}
+
+
+article h2 {
+  text-align: left;
+  font-size: 18px;
+}
+
+article h4 {
+  color: #6890a5;
+  text-align: right;
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+article p {
+  margin-top: 1%;
+  letter-spacing: 0.5px;
+}
+
+.btn {
+  background-color: transparent;
+  border: 1px solid black;
+  padding: .5rem 1rem;
+  margin: 20px auto 0 auto;
+  display: block;
+  font-weight: 700;
+}
+
+.btn:hover
+{
+  border: 1px solid #a9c3d0;
+  background-color: #a9c3d0;
+  color: white;
+  cursor: pointer;
+}
+
+.landingDiv {
+  margin-right: 5%;
+}
+
+.ellipsis {
+  display: block;
+  display: -webkit-box;
+  height: 70px;
+  margin: 0 auto;
+  line-height: 1.4;
+  -webkit-line-clamp: 3;
+  /* autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

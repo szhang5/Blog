@@ -1,0 +1,44 @@
+.footer {
+  height: 100px;
+  border-top: 1px solid lightgray;
+}
+
+.text p{ 
+  text-align: center;
+  color: #888;
+}
+
+.socialLinks {
+  margin: 1% auto;
+  text-align: center;
+  list-style: none;
+}
+
+.socialLinks li {
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.socialLinks li a:link,
+.socialLinks li a:visited {
+  color: #888;
+  text-decoration: none;
+  border: 0;
+  transform: color 0.2s;
+}
+
+.logoFacebook:hover {
+  color: #3b5998;
+}
+
+.logoGithub:hover {
+  color: black;
+}
+
+.logoLinkedin:hover {
+  color: #1368b5;
+}
+
+.logoInstagram:hover {
+  color: #7c458e;
+}
