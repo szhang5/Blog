@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Landing from './containers/Landing';
 import Album from './containers/Album';
 import Post from './containers/Post';
+import About from './containers/About';
 import CategoryPost from './containers/CategoryPost';
 import SideBar from './containers/SideBar';
 import Footer from './components/Footer';
@@ -19,6 +20,7 @@ const App = () => (
           <Switch>
             <Route exact path="/" component={Landing} />
             <Route exact path="/album" component={Album} />
+            <Route exact path="/about" component={About} />
             <Route exact path="/category/:name" component={CategoryPost} />
             <Route path="/post/:slug" component={Post} />
           </Switch>

@@ -22,8 +22,7 @@ const About = ({ data: { loading, resumes } }) => {
           {resumes.map(resume => (
             <div key={resume.id} className={styles.content}>
               <div className={gridStyles.row}>
-                <div className={[gridStyles.col, gridStyles['span-1-of-11']].join(' ')}>
-                </div>
+                <div className={[gridStyles.col, gridStyles['span-1-of-11']].join(' ')} />
                 <div className={[gridStyles.col, gridStyles['span-10-of-11']].join(' ')}>
                   <article className={styles.leftContent}>
                     <div className={styles.section}>
