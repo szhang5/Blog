@@ -7,31 +7,24 @@ const Header = () => {
   return (
     <div className={styles.header}>
       <div className={gridStyles.row}>
-        <div className={[gridStyles.col, gridStyles['span-1-of-4'], styles.spanLinkWrapper].join(' ')}>
+        <div className={[gridStyles.col, gridStyles['span-1-of-3'], styles.spanLinkWrapper].join(' ')}>
           <div className={styles.spanLink}>
             <Link to="/" style={{ textDecoration: 'none' }}>
               <span>Blog</span>
             </Link>
           </div>
         </div>
-        <div className={[gridStyles.col, gridStyles['span-1-of-4'], styles.spanLinkWrapper].join(' ')}>
+        <div className={[gridStyles.col, gridStyles['span-1-of-3'], styles.spanLinkWrapper].join(' ')}>
           <div className={styles.spanLink}>
             <Link to="/album" style={{ textDecoration: 'none' }}>
               <span>Album</span>
             </Link>
           </div>
         </div>
-        <div className={[gridStyles.col, gridStyles['span-1-of-4'], styles.spanLinkWrapper].join(' ')}>
+        <div className={[gridStyles.col, gridStyles['span-1-of-3'], styles.spanLinkWrapper].join(' ')}>
           <div className={styles.spanLink}>
-            <Link to="/" style={{ textDecoration: 'none' }}>
+            <Link to="/about" style={{ textDecoration: 'none' }}>
               <span>About</span>
-            </Link>
-          </div>
-        </div>
-        <div className={[gridStyles.col, gridStyles['span-1-of-4'], styles.spanLinkWrapper].join(' ')}>
-          <div className={styles.spanLink}>
-            <Link to="/" style={{ textDecoration: 'none' }}>
-              <span>Resume</span>
             </Link>
           </div>
         </div>
