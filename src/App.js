@@ -4,7 +4,7 @@ import Landing from './containers/Landing';
 import Album from './containers/Album';
 import Post from './containers/Post';
 import About from './containers/About';
-import CategoryPost from './containers/CategoryPost';
+import PostByCategory from './containers/PostByCategory';
 import SideBar from './containers/SideBar';
 import Footer from './components/Footer';
 import styles from './assets/styles/App.css';
@@ -21,7 +21,7 @@ const App = () => (
             <Route exact path="/" component={Landing} />
             <Route exact path="/album" component={Album} />
             <Route exact path="/about" component={About} />
-            <Route exact path="/category/:name" component={CategoryPost} />
+            <Route exact path="/category/:name" component={PostByCategory} />
             <Route path="/post/:slug" component={Post} />
           </Switch>
         </div>

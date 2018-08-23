@@ -50,6 +50,22 @@ article p {
   margin-right: 5%;
 }
 
+.socialLinks {
+  display: inline-block;
+  color: #5994ca;
+  width: 100%;
+}
+
+.logoTag {
+  float: right;
+}
+
+.logoTag span {
+  float: right;
+  color: #5994ca;
+  text-transform: capitalize;
+}
+
 .ellipsis {
   display: block;
   display: -webkit-box;

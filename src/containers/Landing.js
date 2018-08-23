@@ -4,6 +4,8 @@ import moment from 'moment';
 import PropTypes from 'prop-types';
 import { graphql } from 'react-apollo';
 import gql from 'graphql-tag';
+import { Icon } from 'react-icons-kit';
+import { tag } from 'react-icons-kit/typicons/tag';
 import Header from '../components/Header';
 import gridStyles from '../assets/styles/grid.css';
 import styles from './styles/landing.css';
@@ -26,6 +28,12 @@ const Landing = ({ data: { loading, posts } }) => {
                 <div className={[gridStyles.col, gridStyles['span-3-of-4']].join(' ')}>
                   <article className={styles.leftContent} key={post.id}>
                     <h2>{post.title}</h2>
+                    <div className={styles.socialLinks}>
+                      <div className={styles.logoTag}>
+                        <span>{post.category.name}</span>
+                        <Icon size={18} icon={tag} />
+                      </div>
+                    </div>
                     <p className={styles.ellipsis} dangerouslySetInnerHTML={{ __html: post.content }} />
                     <Link to={`/post/${post.slug}`} style={{ textDecoration: 'none' }}>
                       <button className={styles.btn} type="button">Read More</button>
@@ -53,6 +61,9 @@ const Posts = gql`
    title
    content
    slug
+   category{
+    name
+   }
   }
 }
 `;
