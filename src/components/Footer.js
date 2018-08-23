@@ -13,10 +13,10 @@ const Footer = () => {
     <div className={styles.footer}>
       <div className={gridStyles.row}>
         <div className={styles.socialLinks}>
-          <li><a href="https://github.com/szhang5" target="_blank"><div className={styles.logoGithub}><Icon size={20} icon={ github } /></div></a></li>
-          <li><a href="https://www.facebook.com/shiyunzhang.zoey" target="_blank"><div className={styles.logoFacebook}><Icon size={20} icon={ facebook2 } /></div></a></li>
-          <li><a href="https://www.instagram.com/z.shiyun/" target="_blank"><div className={styles.logoInstagram}><Icon size={20} icon={ instagram } /></div></a></li>
-          <li><a href="https://www.linkedin.com/in/shiyunzhangzoey" target="_blank"><div className={styles.logoLinkedin}><Icon size={20} icon={ linkedin } /></div></a></li>
+          <li><a href="https://github.com/szhang5" target="_blank" rel="noopener noreferrer"><div className={styles.logoGithub}><Icon size={20} icon={github} /></div></a></li>
+          <li><a href="https://www.facebook.com/shiyunzhang.zoey" target="_blank" rel="noopener noreferrer"><div className={styles.logoFacebook}><Icon size={20} icon={facebook2} /></div></a></li>
+          <li><a href="https://www.instagram.com/z.shiyun/" target="_blank" rel="noopener noreferrer"><div className={styles.logoInstagram}><Icon size={20} icon={instagram} /></div></a></li>
+          <li><a href="https://www.linkedin.com/in/shiyunzhangzoey" target="_blank" rel="noopener noreferrer"><div className={styles.logoLinkedin}><Icon size={20} icon={linkedin} /></div></a></li>
         </div>
         <div className={styles.text}>
           <p>

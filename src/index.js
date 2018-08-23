@@ -10,13 +10,12 @@ import registerServiceWorker from './registerServiceWorker';
 const API = process.env.REACT_APP_GRAPHCMS_API;
 
 const client = new ApolloClient({
- link: new HttpLink({ uri: API }),
- cache: new InMemoryCache()
+  link: new HttpLink({ uri: API }),
+  cache: new InMemoryCache()
 });
 ReactDOM.render(
- <ApolloProvider client={client}>
-  <App />
- </ApolloProvider>,
+  <ApolloProvider client={client}>
+  	<App />
+  </ApolloProvider>,
 document.getElementById('root'));
 registerServiceWorker();
-
