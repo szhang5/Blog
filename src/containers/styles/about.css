@@ -1,0 +1,90 @@
+.landingDiv {
+	margin-right: 5%;
+}
+
+.content {
+	margin: 50px auto;
+}
+
+.content h1 {
+	font-size: 15px;
+	margin-top: 7%;
+	margin-left: 3%;
+	text-transform: uppercase;
+}
+
+.content .profileImage {
+	width: 100px;
+	border-radius: 50%; 
+}
+
+.rightContent, .leftContent {
+ background-color: none;
+ padding: 1rem;
+}
+
+.leftContent {
+	border-left: 1px solid #6890a5;
+}
+
+.section {
+	margin-bottom: 5%; 
+}
+
+.section h2 {
+	font-size: 25px;
+	text-transform: uppercase;
+}
+
+.section h3 {
+	margin-top: 2%;
+}
+
+.section h5 {
+	font-size: 15px;
+	color: gray;
+	font-weight: normal;
+}
+
+.section p {
+	font-size: 13px;
+	margin-left: 1%;
+}
+
+.section a {
+	text-decoration: none;
+	color: #6890a5;
+}
+
+.section span {
+	margin-right: 2%;
+	float:left;
+}
+
+.blackTie span,
+.blackTie {
+	color: #28979c;
+}
+
+.graduationCap,
+.graduationCap span {
+	color: #afa036;
+}
+
+.wrench,
+.wrench span {
+	color: #3038a2;
+}
+
+.thumbsOUp,
+.thumbsOUp span {
+	color: #5994ca;
+}
+
+.trophy,
+.trophy span {
+	color: #c17a26;
+}
+
+
+
