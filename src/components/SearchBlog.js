@@ -25,22 +25,16 @@ class SearchBlog extends Component {
     }
     return this.props.client.query({
       query: gql`
-        query Posts($slug: String!) {
+        query Posts($input: String!) {
           posts( where: {
-            title_contains: $slug
+            title_contains: $input
             status: PUBLISHED
           }){
-            createdAt
-            id
             slug
             title
-            content
-            image {
-             url
-            }
           }
         }`,
-      variables: { slug: input },
+      variables: { input },
     }).then((response) => {
       const posts = map(response.data.posts, post => {
         return {
