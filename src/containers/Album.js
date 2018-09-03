@@ -17,7 +17,7 @@ const Album = ({ data: { loading, posts } }) => {
           <Header />
           <div className={styles.content}>
             {posts.map(post => (
-              <div className={gridStyles.row}>
+              <div key={post.id} className={gridStyles.row}>
                 <div className={[gridStyles.col, gridStyles['span-1-of-4']].join(' ')}>
                   <article className={styles.rightContent}>
                     <h4>{moment(post.createdAt).format('dddd Do')}</h4>

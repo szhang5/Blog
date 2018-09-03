@@ -96,6 +96,7 @@ const About = ({ data: { loading, resumes } }) => {
 const Resume = gql`
  query resumes {
   resumes {
+    id
     name
     profilepic {
       url
