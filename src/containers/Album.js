@@ -20,7 +20,7 @@ const Album = ({ data: { loading, posts } }) => {
               <div key={post.id} className={gridStyles.row}>
                 <div className={[gridStyles.col, gridStyles['span-1-of-4']].join(' ')}>
                   <article className={styles.rightContent}>
-                    <h4>{moment(post.createdAt).format('dddd Do')}</h4>
+                    <h4>{moment(post.createdAt).format('L')}</h4>
                   </article>
                 </div>
                 <div className={[gridStyles.col, gridStyles['span-3-of-4']].join(' ')}>
