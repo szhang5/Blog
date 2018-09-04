@@ -69,7 +69,7 @@ article p {
 .ellipsis {
   display: block;
   display: -webkit-box;
-  height: 80px;
+  height: 76px;
   margin: 0 auto;
   line-height: 1.4;
   -webkit-line-clamp: 3;
