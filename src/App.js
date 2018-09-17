@@ -5,6 +5,8 @@ import Pofolio from './containers/Pofolio';
 import Post from './containers/Post';
 import About from './containers/About';
 import PostByCategory from './containers/PostByCategory';
+import Header from './components/Header';
+import SideHeader from './components/SideHeader';
 import SideBar from './containers/SideBar';
 import Footer from './components/Footer';
 import styles from './assets/styles/App.css';
@@ -16,6 +18,10 @@ const App = () => (
   <BrowserRouter>
     <div className={[styles.mainDiv, responsive.mainDiv].join(' ')}>
       <main>
+        <div className={[styles.gridContainer, responsive.header].join(' ')}>
+          <SideHeader />
+          <Header />
+        </div>
         <div className={gridStyles.row}>
           <SideBar />
           <Switch>

@@ -14,6 +14,13 @@ body {
 .mainDiv {
 	width: 85%;
 	margin: 0 auto;
-	background-image: linear-gradient(to top left, lightgray, white);
+	/*background-image: linear-gradient(to top left, lightgray, white);*/
+	background-color: white;
 }
 
+.gridContainer {
+  max-width:1140px;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  margin:0 auto;
+}

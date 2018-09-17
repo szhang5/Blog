@@ -34,7 +34,6 @@ const Landing = ({ data: { loading, posts } }) => {
     return (
       <div className={[gridStyles.col, gridStyles['span-3-of-4']].join(' ')}>
         <div className={styles.landingDiv}>
-          <Header />
           <div className={styles.content}>
             {
               map(keys, monthYear => {
@@ -61,8 +60,10 @@ const Landing = ({ data: { loading, posts } }) => {
                                 <h2>{post.title}</h2>
                                 <div className={styles.socialLinks}>
                                   <div className={styles.logoTag}>
+                                  <Link to={`/category/${post.category.name}`}>
                                     <span>{post.category.name}</span>
                                     <Icon size={18} icon={tag} />
+                                  </Link>
                                   </div>
                                 </div>
                                 <p className={[styles.ellipsis, responsive.ellipsis].join(' ')} dangerouslySetInnerHTML={{ __html: post.content }} />
@@ -74,6 +75,7 @@ const Landing = ({ data: { loading, posts } }) => {
                           </div>);
                       })
                     }
+                  <br /><br /><br />
                   </div>
                 )})
               }

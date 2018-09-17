@@ -17,7 +17,6 @@ const PostByCategory = ({ data: { loading, category } }) => {
     return (
       <div className={[gridStyles.col, gridStyles['span-3-of-4']].join(' ')}>
         <div className={styles.landingDiv}>
-          <Header />
           <div className={styles.content}>
             {posts.map(post => (
               <div className={gridStyles.row} key={post.id}>

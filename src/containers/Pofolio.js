@@ -29,7 +29,6 @@ const Pofolio = ({ data: { loading, pofolios } }) => {
     return (
       <div className={[gridStyles.col, gridStyles['span-3-of-4']].join(' ')}>
         <div className={styles.landingDiv}>
-          <Header />
           <div className={styles.content}>
           {
             map(keys, monthYear => {

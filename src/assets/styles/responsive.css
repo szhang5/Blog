@@ -28,19 +28,20 @@
     	margin-left: 3% !important;
 	}
 	.spanLink {
-		border-bottom: 2px solid black !important;
+		/*border-bottom: 2px solid black !important;*/
+		border-bottom: none !important;
 		margin:0 !important;
 		font-weight: normal !important;
 	}
 	.gridContainer {
-		margin-left: 6%;
+		margin-left: -10%;
 	}
 	.header {
-		height: 40px !important;
+		border-bottom: 1px solid #8080802b;
 	}
-
 	.logo {
-		margin: 0 30% !important;
+		margin: 0 8% !important;
+		width: 69% !important;
 	}
 	.leftContent {
 		border-left: none !important;
@@ -55,7 +56,18 @@
 		font-size: 16px !important;
     	letter-spacing: 1px !important;
 	}
-	
+	.sidebarMenu {
+		margin: 4% 10% !important;
+	}
+	.searchDiv {
+		display: none !important;
+	}
+	.browseByCategory {
+		display: none !important;
+	}
+	.search {
+		margin-bottom: -10% !important;
+	}
 
 }
 
@@ -69,13 +81,29 @@
 		font-size: 21px !important;
     	margin-left: 3%;
 	}
+	.header {
+		border-bottom: 1px solid #8080802b;
+	}
 	.spanLink {
-		border-bottom: 2px solid black !important;
+		border-bottom: none !important;
+		/*border-bottom: 2px solid black !important;*/
 		margin:0 !important;
 		font-weight: normal !important;
 	}
 	.gridContainer {
-		margin-left: 6%;
+		margin-left: -10%;
+	}
+	.sidebarMenu {
+		margin: 4% 10% !important;
+	}
+	.searchDiv {
+		display: none !important;
+	}
+	.browseByCategory {
+		display: none !important;
+	}
+	.search {
+		margin-bottom: -10% !important;
 	}
 }
 

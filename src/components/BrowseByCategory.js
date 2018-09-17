@@ -4,12 +4,13 @@ import PropTypes from 'prop-types';
 import { graphql } from 'react-apollo';
 import gql from 'graphql-tag';
 import styles from './styles/browseByCategory.css';
+import responsive from '../assets/styles/responsive.css';
 
 
 const BrowseByCategory = ({ data: { loading, categories } }) => {
   if (!loading) {
     return (
-      <div className={styles.category}>
+      <div className={[styles.category, responsive.browseByCategory].join(' ')}>
         <div className={styles.categoryDiv}>
           Browse By Category
         </div>

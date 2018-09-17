@@ -5,6 +5,7 @@ import Select from 'react-select';
 import { withApollo } from 'react-apollo';
 import gql from 'graphql-tag';
 import { withRouter } from 'react-router-dom';
+import responsive from '../assets/styles/responsive.css';
 import styles from './styles/searchBlog.css';
 
 
@@ -60,8 +61,8 @@ class SearchBlog extends Component {
 
   render() {
     return (
-      <div className={styles.search}>
-        <div className={styles.searchDiv}>
+      <div className={[styles.search, responsive.search].join(' ')}>
+        <div className={[styles.searchDiv, responsive.searchDiv].join(' ')}>
           Search
         </div>
         <div className={styles.searchBox}>

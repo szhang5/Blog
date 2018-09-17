@@ -18,7 +18,6 @@ const About = ({ data: { loading, resumes } }) => {
     return (
       <div className={[gridStyles.col, gridStyles['span-3-of-4']].join(' ')}>
         <div className={styles.landingDiv}>
-          <Header />
           {resumes.map(resume => (
             <div key={resume.id} className={styles.content}>
               <div className={gridStyles.row}>

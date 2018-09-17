@@ -8,7 +8,7 @@ const SideHeader = () => {
   return (
     <div className={styles.header}>
       <Link to="/" style={{ textDecoration: 'none' }}>
-        <img src="/images/logo.png" alt="Logo" className={[styles.logo, responsive.logo].join(' ')} />
+        <img src="/images/logo_black.png" alt="Logo" className={[styles.logo, responsive.logo].join(' ')} />
       </Link>
     </div>
   );

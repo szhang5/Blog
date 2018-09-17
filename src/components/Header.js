@@ -5,7 +5,7 @@ import responsive from '../assets/styles/responsive.css';
 
 const Header = () => {
   return (
-    <div className={[styles.header, responsive.header].join(' ')}>
+    <div className={styles.header}>
       <div className={[styles.gridContainer,responsive.gridContainer].join(' ')}>
         <div className={styles.spanLinkWrapper}>
           <Link to="/" style={{ textDecoration: 'none' }}>
