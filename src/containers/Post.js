@@ -16,9 +16,9 @@ const Post = ({ data: { loading, post } }) => {
       <div className={[gridStyles.col, gridStyles['span-3-of-4']].join(' ')}>
         <div className={styles.landingDiv}>
           <div className={styles.card}>
-            <div className={styles.container}>
+            <div className={[styles.container, responsive.postContainer].join(' ')}>
               <article className={styles.wrapper}>
-                <div className={styles.post}>
+                <div className={[styles.post, responsive.post].join(' ')}>
                   <h1 className={responsive.postTitle}>{post.title}</h1>
                   <h4 className={responsive.postDate}>{moment(post.createdAt).format('MMMM Do YYYY, h:mm a')}</h4>
                   <p className={[styles.postContent, responsive.postContent].join(' ')} dangerouslySetInnerHTML={{ __html: post.content }} />

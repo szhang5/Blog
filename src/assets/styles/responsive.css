@@ -45,6 +45,20 @@
 	}
 	.leftContent {
 		border-left: none !important;
+		padding:0 !important;
+		margin-left: 5% !important;
+	}
+	.landingH4 {
+		text-align: left;
+	}
+	.landingTag{
+		margin-top: 2% !important;
+	}
+	.postContainer {
+		padding: 0 !important;
+	}
+	.post {
+		margin-left: 8%;
 	}
 	.postTitle{
 		font-size: 22px !important;
@@ -104,6 +118,12 @@
 	}
 	.search {
 		margin-bottom: -10% !important;
+	}
+	.postContainer {
+		padding: 0 !important;
+	}
+	.post {
+		margin-left: 8%;
 	}
 }
 
