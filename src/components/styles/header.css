@@ -13,6 +13,7 @@
   text-decoration: none;
   padding: 8px 0;
   font-size: 100%;
+  font-weight: 700;
   color: black;
   text-transform: uppercase; 
   border-bottom: 4px solid black;
@@ -26,9 +27,14 @@
 }
 
 .spanLinkWrapper {
-  padding-top: 5%;
+  padding-top: 20%;
 }
 
-span {
-  color: black;
+.gridContainer {
+  max-width:1140px;
+  display: grid;
+  /*grid-row-gap: 50px;*/
+  grid-template-columns: 33% 33% 33%;
+  margin:0 auto;
 }
+ 

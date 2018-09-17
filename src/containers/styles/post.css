@@ -33,9 +33,10 @@
   margin-bottom: 5%;
 }
 
-.post p {
+.postContent {
   /*margin-top: 5%;*/
   font-size: 18px;
+  word-wrap: break-word;
 }
 
 .post table {
@@ -96,4 +97,9 @@
 
 .landingDiv {
   margin-right: 5%;
+}
+
+blockquote {
+  font-size: 14px;
+  background-color: #88888840;
 }

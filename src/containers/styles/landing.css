@@ -71,7 +71,7 @@ article p {
   display: -webkit-box;
   height: 76px;
   margin: 0 auto;
-  line-height: 1.4;
+  line-height: 1.5;
   -webkit-line-clamp: 3;
   /* autoprefixer: off */
   -webkit-box-orient: vertical;

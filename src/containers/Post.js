@@ -7,6 +7,7 @@ import gql from 'graphql-tag';
 import Header from '../components/Header';
 import gridStyles from '../assets/styles/grid.css';
 import styles from './styles/post.css';
+import responsive from '../assets/styles/responsive.css';
 
 
 const Post = ({ data: { loading, post } }) => {
@@ -19,9 +20,9 @@ const Post = ({ data: { loading, post } }) => {
             <div className={styles.container}>
               <article className={styles.wrapper}>
                 <div className={styles.post}>
-                  <h1>{post.title}</h1>
-                  <h4>{moment(post.createdAt).format('MMMM Do YYYY, h:mm a')}</h4>
-                  <p dangerouslySetInnerHTML={{ __html: post.content }} />
+                  <h1 className={responsive.postTitle}>{post.title}</h1>
+                  <h4 className={responsive.postDate}>{moment(post.createdAt).format('MMMM Do YYYY, h:mm a')}</h4>
+                  <p className={[styles.postContent, responsive.postContent].join(' ')} dangerouslySetInnerHTML={{ __html: post.content }} />
                   <img className={styles.postImg} src={post.image.url} alt="PostImage" />
                 </div>
               </article>

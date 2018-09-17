@@ -1,0 +1,84 @@
+@media only screen and (max-width: 2560px) {
+  
+}
+
+
+@media only screen and (max-width: 1440px) {
+
+}
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1024px) {
+  
+}
+
+@media only screen and (max-width: 1000px){
+
+
+}
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px){
+	.mainDiv {
+		width:100% !important;
+	}
+
+	.date {
+		font-size: 21px !important;
+    	margin-left: 3% !important;
+	}
+	.spanLink {
+		border-bottom: 2px solid black !important;
+		margin:0 !important;
+		font-weight: normal !important;
+	}
+	.gridContainer {
+		margin-left: 6%;
+	}
+	.header {
+		height: 40px !important;
+	}
+
+	.logo {
+		margin: 0 30% !important;
+	}
+	.leftContent {
+		border-left: none !important;
+	}
+	.postTitle{
+		font-size: 22px !important;
+	}
+	.postDate {
+		font-size: 14px !important;
+	}
+	.postContent {
+		font-size: 16px !important;
+    	letter-spacing: 1px !important;
+	}
+	
+
+}
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+	.mainDiv {
+		width:100% !important;
+	}
+
+	.date {
+		font-size: 21px !important;
+    	margin-left: 3%;
+	}
+	.spanLink {
+		border-bottom: 2px solid black !important;
+		margin:0 !important;
+		font-weight: normal !important;
+	}
+	.gridContainer {
+		margin-left: 6%;
+	}
+}
+
+@media only screen and (max-width: 330px) {
+ 	
+}

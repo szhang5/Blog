@@ -8,8 +8,10 @@ import gql from 'graphql-tag';
 import { Icon } from 'react-icons-kit';
 import { tag } from 'react-icons-kit/typicons/tag';
 import Header from '../components/Header';
+import Bubble from '../components/Bubble';
 import gridStyles from '../assets/styles/grid.css';
 import styles from './styles/landing.css';
+import responsive from '../assets/styles/responsive.css';
 
 
 const getPostsByMonth = (posts) => {
@@ -42,7 +44,7 @@ const Landing = ({ data: { loading, posts } }) => {
                     <div className={gridStyles.row}>
                       <div className={[gridStyles.col, gridStyles['span-1-of-12']].join(' ')} />
                       <div className={[gridStyles.col, gridStyles['span-11-of-12']].join(' ')}>
-                        <div className={styles.date}>{moment(monthYear).format('MMMM YYYY')}</div>
+                        <div className={[styles.date, responsive.date].join(' ')}>{moment(monthYear).format('MMMM YYYY')}</div>
                       </div> 
                     </div>
                     {
@@ -55,7 +57,7 @@ const Landing = ({ data: { loading, posts } }) => {
                               </article>
                             </div>
                             <div className={[gridStyles.col, gridStyles['span-3-of-4']].join(' ')}>
-                              <article className={styles.leftContent} key={post.id}>
+                              <article className={[styles.leftContent, responsive.leftContent].join(' ')} key={post.id}>
                                 <h2>{post.title}</h2>
                                 <div className={styles.socialLinks}>
                                   <div className={styles.logoTag}>
@@ -63,7 +65,7 @@ const Landing = ({ data: { loading, posts } }) => {
                                     <Icon size={18} icon={tag} />
                                   </div>
                                 </div>
-                                <p className={styles.ellipsis} dangerouslySetInnerHTML={{ __html: post.content }} />
+                                <p className={[styles.ellipsis, responsive.ellipsis].join(' ')} dangerouslySetInnerHTML={{ __html: post.content }} />
                                 <Link to={`/post/${post.slug}`} style={{ textDecoration: 'none' }}>
                                   <button className={styles.btn} type="button">Read More</button>
                                 </Link>

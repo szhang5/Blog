@@ -1,32 +1,32 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './styles/header.css';
-import gridStyles from '../assets/styles/grid.css';
+import responsive from '../assets/styles/responsive.css';
 
 const Header = () => {
   return (
-    <div className={styles.header}>
-      <div className={gridStyles.row}>
-        <div className={[gridStyles.col, gridStyles['span-1-of-3'], styles.spanLinkWrapper].join(' ')}>
-          <div className={styles.spanLink}>
-            <Link to="/" style={{ textDecoration: 'none' }}>
-              <span>Blog</span>
-            </Link>
-          </div>
+    <div className={[styles.header, responsive.header].join(' ')}>
+      <div className={[styles.gridContainer,responsive.gridContainer].join(' ')}>
+        <div className={styles.spanLinkWrapper}>
+          <Link to="/" style={{ textDecoration: 'none' }}>
+            <div className={[styles.spanLink, responsive.spanLink].join(' ')}>
+            Blog
+            </div>
+          </Link>
         </div>
-        <div className={[gridStyles.col, gridStyles['span-1-of-3'], styles.spanLinkWrapper].join(' ')}>
-          <div className={styles.spanLink}>
-            <Link to="/album" style={{ textDecoration: 'none' }}>
-              <span>Album</span>
-            </Link>
-          </div>
+        <div className={styles.spanLinkWrapper}>
+          <Link to="/pofolio" style={{ textDecoration: 'none' }}>
+            <div className={[styles.spanLink, responsive.spanLink].join(' ')}>
+              Pofolio
+            </div>
+          </Link>
         </div>
-        <div className={[gridStyles.col, gridStyles['span-1-of-3'], styles.spanLinkWrapper].join(' ')}>
-          <div className={styles.spanLink}>
-            <Link to="/about" style={{ textDecoration: 'none' }}>
-              <span>About</span>
-            </Link>
-          </div>
+        <div className={styles.spanLinkWrapper}>
+          <Link to="/about" style={{ textDecoration: 'none' }}>
+            <div className={[styles.spanLink, responsive.spanLink].join(' ')}>
+                About
+            </div>
+          </Link>
         </div>
       </div>
     </div>

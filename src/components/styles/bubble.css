@@ -1,0 +1,173 @@
+
+.circle-group {
+    bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	height:0;
+}
+
+/*-- KEYFRAMES --*/
+
+@keyframes animateBubble {
+    0% {
+        margin-top: 1000px;
+    }
+    100% {
+        margin-top: -50%;
+    }
+}
+
+@keyframes sideWays { 
+    0% { 
+        margin-left:0px;
+    }
+    100% { 
+        margin-left:50px;
+    }
+}
+
+/*-- ANIMATIONS --*/
+
+.x1 {
+	animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	left: -5%;
+	top: 5%;
+	background: radial-gradient(ellipse at center, #c7eff1 0%, #ffffff00 70%);
+	transform: scale(0.3);
+}
+
+.x2 {
+	animation: animateBubble 15s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	left: 5%;
+	top: 80%;
+	background: radial-gradient(ellipse at center, #f5c082 0%, #ffffff00 70%);
+	transform: scale(0.3);
+}
+
+.x3 {
+	animation: animateBubble 28s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	left: 10%;
+	top: 40%;
+	background: radial-gradient(ellipse at center, #d07d7d80 0%, #ffffff00 70%);
+	transform: scale(0.3);
+}
+
+.x4 {
+	animation: animateBubble 13s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	left: 20%;
+	top: 0;
+	background: radial-gradient(ellipse at center, #35cdd4 0%, #ffffff00 70%);
+	transform: scale(0.3);
+}
+
+.x5 {
+	animation: animateBubble 29s linear infinite, sideWays 6s ease-in-out infinite alternate;
+	left: 30%;
+	top: 50%;
+	background: radial-gradient(ellipse at center, #c7eff1 0%, #ffffff00 70%);
+	transform: scale(0.3);
+}
+
+.x6 {
+	animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	left: 50%;
+	top: 0;
+	background: radial-gradient(ellipse at center, #bd7dd2 0%, #ffffff00 70%);
+	transform: scale(0.3);
+}
+
+.x7 {
+	animation: animateBubble 15s linear infinite, sideWays 5s ease-in-out infinite alternate;
+	left: 65%;
+	top: 70%;
+	background: radial-gradient(ellipse at center, #a0de5d 0%, #ffffff00 70%);
+	transform: scale(0.3);
+}
+
+.x8 {
+	animation: animateBubble 13s linear infinite, sideWays 3s ease-in-out infinite alternate;
+	left: 80%;
+	top: 10%;
+	background: radial-gradient(ellipse at center, #e1f72f 0%, #ffffff00 70%);
+	transform: scale(0.3);
+}
+
+.x9 {
+	animation: animateBubble 29s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	left: 90%;
+	top: 50%;
+	background: radial-gradient(ellipse at center, #c7eff1 0%, #ffffff00 70%);
+	transform: scale(0.3);
+}
+
+.x10 {
+	animation: animateBubble 16s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	left: 60%;
+	top: 0;
+	background: radial-gradient(ellipse at center, #c7eff1 0%, #ffffff00 70%);
+	transform: scale(0.3);
+}
+
+.x11 {
+	animation: animateBubble 19s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	left: 15%;
+	top: 65%;
+	background: radial-gradient(ellipse at center, #cadc14 0%, #ffffff00 70%);
+	transform: scale(0.4);
+}
+
+.x12 {
+	animation: animateBubble 17s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	left: 80%;
+	top: 35%;
+	background: radial-gradient(ellipse at center, #f44336 0%, #ffffff00 70%);
+	transform: scale(0.4);
+}
+
+.x13 {
+	animation: animateBubble 12s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	left: 35%;
+	top: 33%;
+	background: radial-gradient(ellipse at center, #1b99d6 0%, #ffffff00 70%);
+	transform: scale(0.2);
+}
+
+.x14 {
+	animation: animateBubble 11s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	left: 20%;
+	top: 20%;
+	background: radial-gradient(ellipse at center, #a0de5d 0%, #ffffff00 70%);
+	transform: scale(0.2);
+}
+
+.x15 {
+	animation: animateBubble 19s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	left: 30%;
+	top: 40%;
+	background: radial-gradient(ellipse at center, #ff9800 0%, #ffffff00 70%);
+	transform: scale(0.2);
+}
+
+/*-- OBJECTS --*/
+
+.circle {
+	border-radius: 50%;
+	/*box-shadow: 0 20px 30px #00000033, inset 0px 10px 30px 5px #ffffff;*/
+    height: 200px;
+    width: 200px;
+	position: absolute;
+}
+
+.circle:after {
+    background: radial-gradient(ellipse at center, #ffffff80 0%,#ffffff00 70%); 
+	border-radius: 50%;
+	/*box-shadow: inset 0 20px 30px #ffffff4d;*/
+	content:'';
+    height: 180px;
+	left: 10px;
+	position: absolute;
+	width: 180px;
+}
+

@@ -1,0 +1,51 @@
+.landingDiv {
+	margin-right: 5%;
+}
+
+.content {
+	margin: 50px auto;
+}
+
+.rightContent, .leftContent {
+ background-color: none;
+ padding: 1rem;
+}
+
+.leftContent {
+	border-left: 1px solid #6890a5;
+}
+
+.date {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #6890a5;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+article h1 {
+  color: black;
+  font-size: 18px;
+  text-align:left;
+}
+
+article h4 {
+	color: #6890a5;
+	text-align: right;
+	font-weight: lighter;
+	font-size: 16px;
+}
+
+article img {
+	width: 100%;
+	margin-top: 5%;
+}
+
+article a {
+	text-decoration: none;
+    color: #1b99d6;
+}
+    
+article .pofolioContent {
+	text-align: center;
+}
