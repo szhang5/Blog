@@ -10,14 +10,14 @@ const Header = () => {
         <div className={styles.spanLinkWrapper}>
           <Link to="/" style={{ textDecoration: 'none' }}>
             <div className={[styles.spanLink, responsive.spanLink].join(' ')}>
-            Blog
+              Blog
             </div>
           </Link>
         </div>
         <div className={styles.spanLinkWrapper}>
           <Link to="/pofolio" style={{ textDecoration: 'none' }}>
             <div className={[styles.spanLink, responsive.spanLink].join(' ')}>
-              Pofolio
+              Portfolio
             </div>
           </Link>
         </div>
