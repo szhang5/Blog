@@ -15,7 +15,7 @@ const Header = () => {
           </Link>
         </div>
         <div className={styles.spanLinkWrapper}>
-          <Link to="/pofolio" style={{ textDecoration: 'none' }}>
+          <Link to="/portfolio" style={{ textDecoration: 'none' }}>
             <div className={[styles.spanLink, responsive.spanLink].join(' ')}>
               Portfolio
             </div>
