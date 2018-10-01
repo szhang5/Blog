@@ -26,6 +26,17 @@ const About = ({ data: { loading, resumes } }) => {
                   <article className={styles.leftContent}>
                     <div className={styles.section}>
                       <h2>
+                        <div className={styles.thumbsOUp}>
+                          <span>
+                            <Icon size={28} icon={thumbsOUp} />
+                          </span>
+                          {resume.skill}
+                        </div>
+                      </h2>
+                      <p dangerouslySetInnerHTML={{ __html: resume.skillContent }} />
+                    </div>
+                    <div className={styles.section}>
+                      <h2>
                         <div className={styles.blackTie}>
                           <span>
                             <Icon size={28} icon={blackTie} />
@@ -56,17 +67,6 @@ const About = ({ data: { loading, resumes } }) => {
                         </div>
                       </h2>
                       <p dangerouslySetInnerHTML={{ __html: resume.projectContent }} />
-                    </div>
-                    <div className={styles.section}>
-                      <h2>
-                        <div className={styles.thumbsOUp}>
-                          <span>
-                            <Icon size={28} icon={thumbsOUp} />
-                          </span>
-                          {resume.skill}
-                        </div>
-                      </h2>
-                      <p dangerouslySetInnerHTML={{ __html: resume.skillContent }} />
                     </div>
                     <div className={styles.section}>
                       <h2>
