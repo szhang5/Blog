@@ -48,17 +48,6 @@ const About = ({ data: { loading, resumes } }) => {
                     </div>
                     <div className={styles.section}>
                       <h2>
-                        <div className={styles.graduationCap}>
-                          <span>
-                            <Icon size={28} icon={graduationCap} />
-                          </span>
-                          {resume.education}
-                        </div>
-                      </h2>
-                      <p dangerouslySetInnerHTML={{ __html: resume.educationContent }} />
-                    </div>
-                    <div className={styles.section}>
-                      <h2>
                         <div className={styles.wrench}>
                           <span>
                             <Icon size={28} icon={wrench} />
@@ -67,6 +56,17 @@ const About = ({ data: { loading, resumes } }) => {
                         </div>
                       </h2>
                       <p dangerouslySetInnerHTML={{ __html: resume.projectContent }} />
+                    </div>
+                    <div className={styles.section}>
+                      <h2>
+                        <div className={styles.graduationCap}>
+                          <span>
+                            <Icon size={28} icon={graduationCap} />
+                          </span>
+                          {resume.education}
+                        </div>
+                      </h2>
+                      <p dangerouslySetInnerHTML={{ __html: resume.educationContent }} />
                     </div>
                     <div className={styles.section}>
                       <h2>
