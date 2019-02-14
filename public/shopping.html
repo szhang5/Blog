@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ultra Corporation-shopping</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+	<header class="shopping-page">
+    <div class="nav-box">
+      <a id="shopping-cart" onclick="showCart(this, 'shopping-cart-summary')"><i class="fas fa-shopping-cart"> <span>Shopping cart (<span id="countItem">0</span>)</span></i></a>
+    </div>
+    <div class="shopping-cart-summary">
+      <div class="cart-total">
+        <h5>Your shopping cart is empty.</h5>
+        <hr>
+        <table class="order-total">
+          <tbody>
+            <tr>
+              <th>ORDER VALUE:</th>
+              <td><span>$0.00</span></td>
+            </tr>   
+          </tbody>
+          <tfoot>
+            <tr>
+              <th>TOTAL</th>
+              <td>$0.00</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+		<div class="header-box">
+			<div class="container">
+        <svg viewBox="0 0 1418 116" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <g stroke="none" fill="none" fill-rule="evenodd" fill-opacity="0">
+            <text id="shoppingpage-title">
+              <tspan x="150" y="109">
+                <tspan>U</tspan>
+                <tspan>L</tspan>
+                <tspan>T</tspan>
+                <tspan>R</tspan>
+                <tspan>A</tspan>
+                <tspan>&nbsp;</tspan>
+                <tspan>C</tspan>
+                <tspan>O</tspan>
+                <tspan>R</tspan>
+                <tspan>P</tspan>
+                <tspan>O</tspan>
+                <tspan>R</tspan>
+                <tspan>A</tspan>
+                <tspan>T</tspan>
+                <tspan>I</tspan>
+                <tspan>O</tspan>
+                <tspan>N</tspan>
+              </tspan>
+            </text>
+          </g>
+        </svg>
+      </div>
+      <button class="go-back-button" onclick="goBackToHomepage()">Back To Homepage</button>
+			<hr>
+		</div>
+	</header>
+
+  <div class="grid-container-of-3">
+		<div class="outter-card" id="product-1">
+      <div class="img-scene">
+        <div class="card" onclick="flipImg(this)">
+          <div class="card-face card-face-front"> 
+            <img src="https://res.cloudinary.com/zoey1111/image/upload/v1536956841/hw2/artifical_flower.jpg" alt="artifical flower" style="width:100%">    
+          </div>
+          <div class="card-face card-face-back">
+            <img src="https://res.cloudinary.com/zoey1111/image/upload/v1536970022/artifical_flower2.jpg" alt="artifical flower" style="width:100%">  
+          </div>
+        </div>
+      </div>
+		  <h3>Artifical Flower</h3>
+		  <p>$29.99</p>
+      <button class="add-to-cart" onclick="addToCart(this, 'product-1')">Add To Cart</button>
+		</div>
+    <div class="outter-card" id="product-2">
+      <div class="img-scene">
+        <div class="card" onclick="flipImg(this)">
+          <div class="card-face card-face-front"> 
+            <img src="https://res.cloudinary.com/zoey1111/image/upload/v1536970175/Chinese_style2.jpg" alt="Chinese style home accessories" style="width:100%">    
+          </div>
+          <div class="card-face card-face-back">
+            <img src="https://res.cloudinary.com/zoey1111/image/upload/v1536956841/hw2/Chinese_style_home_accessories.jpg" alt="Chinese style home accessories" style="width:100%">  
+          </div>
+        </div>
+      </div>
+      <h3>Chinese Style Home Accessories</h3>
+      <p>$59.99</p>
+      <button class="add-to-cart" onclick="addToCart(this, 'product-2')">Add To Cart</button>
+    </div>
+    <div class="outter-card" id="product-3">
+       <div class="img-scene">
+        <div class="card" onclick="flipImg(this)">
+          <div class="card-face card-face-front"> 
+            <img src="https://res.cloudinary.com/zoey1111/image/upload/v1536956842/hw2/decoration.jpg" alt="decoration" style="width:100%"> 
+          </div>
+          <div class="card-face card-face-back">
+            <img src="https://res.cloudinary.com/zoey1111/image/upload/v1536970411/thinking_decoration.jpg" alt="decoration" style="width:100%">  
+          </div>
+        </div>
+      </div>
+      <h3>Decoration</h3>
+      <p>$29.99</p>
+      <button class="add-to-cart" onclick="addToCart(this, 'product-3')">Add To Cart</button>
+    </div>
+    <div class="outter-card" id="product-4">
+       <div class="img-scene">
+        <div class="card" onclick="flipImg(this)">
+          <div class="card-face card-face-front"> 
+            <img src="https://res.cloudinary.com/zoey1111/image/upload/v1536969884/painting2.jpg" alt="painting 1" style="width:100%"> 
+          </div>
+          <div class="card-face card-face-back">
+            <img src="https://res.cloudinary.com/zoey1111/image/upload/v1536957651/hw2/painting1.jpg" alt="painting 1" style="width:100%"> 
+          </div>
+        </div>
+      </div>
+      <h3>Painting</h3>
+      <p>$49.99</p>
+      <button class="add-to-cart" onclick="addToCart(this, 'product-4')">Add To Cart</button>
+    </div>
+    <div class="outter-card" id="product-5">
+       <div class="img-scene">
+        <div class="card" onclick="flipImg(this)">
+          <div class="card-face card-face-front"> 
+            <img src="https://res.cloudinary.com/zoey1111/image/upload/v1536971290/vase2.jpg" alt="vase decoration" style="width:100%">
+          </div>
+          <div class="card-face card-face-back">
+            <img src="https://res.cloudinary.com/zoey1111/image/upload/v1536971290/vase1.jpg" alt="vase decoration" style="width:100%">
+          </div>
+        </div>
+      </div>
+      <h3>Vase Decoration</h3>
+      <p>$29.99</p>
+      <button class="add-to-cart" onclick="addToCart(this, 'product-5')">Add To Cart</button>
+    </div>
+    <div class="outter-card" id="product-6">
+       <div class="img-scene">
+        <div class="card" onclick="flipImg(this)">
+          <div class="card-face card-face-front"> 
+            <img src="https://res.cloudinary.com/zoey1111/image/upload/v1536957766/hw2/kiss-painting.jpg" alt="kiss-painting" style="width:100%">   
+          </div>
+          <div class="card-face card-face-back">
+            <img src="https://res.cloudinary.com/zoey1111/image/upload/v1536969767/kiss-painting2.jpg" alt="kiss-painting" style="width:100%">
+          </div>
+        </div>
+      </div>
+      <h3>Kiss Painting</h3>
+      <p>$49.99</p>
+      <button class="add-to-cart" onclick="addToCart(this, 'product-6')">Add To Cart</button>
+    </div>
+    <div class="outter-card" id="product-7">
+       <div class="img-scene">
+        <div class="card" onclick="flipImg(this)">
+          <div class="card-face card-face-front"> 
+            <img src="https://res.cloudinary.com/zoey1111/image/upload/v1536968809/hw2/desk-decoration2.png" alt="desk-decoration" style="width:100%">   
+          </div>
+          <div class="card-face card-face-back">
+            <img src="https://res.cloudinary.com/zoey1111/image/upload/v1536958188/hw2/desk-decoration.jpg" alt="desk-decoration" style="width:100%">
+          </div>
+        </div>
+      </div>
+      <h3>Desk Decoration</h3>
+      <p>$29.99</p>
+      <button class="add-to-cart" onclick="addToCart(this, 'product-7')">Add To Cart</button>
+    </div>
+    <div class="outter-card" id="product-8">
+       <div class="img-scene">
+        <div class="card" onclick="flipImg(this)">
+          <div class="card-face card-face-front"> 
+            <img src="https://res.cloudinary.com/zoey1111/image/upload/v1537205479/hw2/world.jpg" alt="wall-decoration" style="width:100%">
+          </div>
+          <div class="card-face card-face-back">
+            <img src="https://res.cloudinary.com/zoey1111/image/upload/v1537205778/hw2/wall.png" alt="wall-decoration" style="width:100%">
+          </div>
+        </div>
+      </div>
+      <h3>World Map Decoration</h3>
+      <p>$89.99</p>
+      <button class="add-to-cart" onclick="addToCart(this, 'product-8')">Add To Cart</button>
+    </div>
+    <div class="outter-card" id="product-9">
+       <div class="img-scene">
+        <div class="card" onclick="flipImg(this)">
+          <div class="card-face card-face-front"> 
+            <img src="https://res.cloudinary.com/zoey1111/image/upload/v1536971534/vase3.jpg" alt="vase" style="width:100%">   
+          </div>
+          <div class="card-face card-face-back">
+            <img src="https://res.cloudinary.com/zoey1111/image/upload/v1536971534/vase4.jpg" alt="vase" style="width:100%"> 
+          </div>
+        </div>
+      </div>
+      <h3>Wood Vase</h3>
+      <p>$19.99</p>
+      <button class="add-to-cart" onclick="addToCart(this, 'product-9')">Add To Cart</button>
+    </div>
+	</div>
+
+  <footer>
+    <div class="footer-box">
+      <div class="social-links">
+        <li><a href="#"><i class="fab fa-facebook-square logo-facebook"></i></a></li>
+        <li><a href="#"><i class="fab fa-github logo-github"></i></a></li>
+        <li><a href="#"><i class="fab fa-google-plus-square logo-googleplus"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram logo-instagram"></i></ion-icon></a></li>
+      </div>
+      <p class="footer-text">
+        This webpage was created for mobile web develpment course homework.<br>
+        Infomation in this website isn't true.
+      </p>
+      <p style="color: #8080805e;">&copy; 2018 Shiyun Zhang<p>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script> 
+</body>
+</html>

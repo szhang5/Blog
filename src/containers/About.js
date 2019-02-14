@@ -26,6 +26,17 @@ const About = ({ data: { loading, resumes } }) => {
                   <article className={styles.leftContent}>
                     <div className={styles.section}>
                       <h2>
+                        <div className={styles.thumbsOUp}>
+                          <span>
+                            <Icon size={28} icon={thumbsOUp} />
+                          </span>
+                          {resume.skill}
+                        </div>
+                      </h2>
+                      <p dangerouslySetInnerHTML={{ __html: resume.skillContent }} />
+                    </div>
+                    <div className={styles.section}>
+                      <h2>
                         <div className={styles.blackTie}>
                           <span>
                             <Icon size={28} icon={blackTie} />
@@ -34,17 +45,6 @@ const About = ({ data: { loading, resumes } }) => {
                         </div>
                       </h2>
                       <p dangerouslySetInnerHTML={{ __html: resume.workContent }} />
-                    </div>
-                    <div className={styles.section}>
-                      <h2>
-                        <div className={styles.graduationCap}>
-                          <span>
-                            <Icon size={28} icon={graduationCap} />
-                          </span>
-                          {resume.education}
-                        </div>
-                      </h2>
-                      <p dangerouslySetInnerHTML={{ __html: resume.educationContent }} />
                     </div>
                     <div className={styles.section}>
                       <h2>
@@ -59,14 +59,14 @@ const About = ({ data: { loading, resumes } }) => {
                     </div>
                     <div className={styles.section}>
                       <h2>
-                        <div className={styles.thumbsOUp}>
+                        <div className={styles.graduationCap}>
                           <span>
-                            <Icon size={28} icon={thumbsOUp} />
+                            <Icon size={28} icon={graduationCap} />
                           </span>
-                          {resume.skill}
+                          {resume.education}
                         </div>
                       </h2>
-                      <p dangerouslySetInnerHTML={{ __html: resume.skillContent }} />
+                      <p dangerouslySetInnerHTML={{ __html: resume.educationContent }} />
                     </div>
                     <div className={styles.section}>
                       <h2>

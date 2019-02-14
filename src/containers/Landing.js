@@ -52,13 +52,13 @@ const Landing = ({ data: { loading, posts } }) => {
                           <div className={gridStyles.row} key={post.id}>
                             <div className={[gridStyles.col, gridStyles['span-1-of-4']].join(' ')}>
                               <article className={styles.rightContent}>
-                                <h4>{moment(post.createdAt).format('dddd Do')}</h4>
+                                <h4 className={responsive.landingH4}>{moment(post.createdAt).format('dddd Do')}</h4>
                               </article>
                             </div>
                             <div className={[gridStyles.col, gridStyles['span-3-of-4']].join(' ')}>
                               <article className={[styles.leftContent, responsive.leftContent].join(' ')} key={post.id}>
                                 <h2>{post.title}</h2>
-                                <div className={styles.socialLinks}>
+                                <div className={[styles.socialLinks, responsive.landingTag].join(' ')}>
                                   <div className={styles.logoTag}>
                                   <Link to={`/category/${post.category.name}`}>
                                     <span>{post.category.name}</span>

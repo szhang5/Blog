@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canvas</title>
+	<link rel="stylesheet" type="text/css" href="/css/canvas.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+	<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+</head>
+<body onresize="resetCanvasSize()">
+	<header>
+		<nav>
+			<ul>
+			  <li>
+			  	<div class="grid-container">
+				  	<div class="color-palette">
+				  		<div>
+				  			Select your brush color: 
+				  		</div>
+				  		<button class="color active" style="background-color:Black;" onclick="selectColor(event, 'Black')"></button>
+				  		<button class="color" style="background-color:Tomato;" onclick="selectColor(event, 'Tomato')"></button>
+						  <button class="color" style="background-color:#ff8080;" onclick="selectColor(event, '#ff8080')"></button>
+				  		<button class="color" style="background-color:Orange;" onclick="selectColor(event, 'Orange')"></button>
+						  <button class="color" style="background-color:Yellow;" onclick="selectColor(event, 'Yellow')"></button>
+						  <button class="color" style="background-color:DodgerBlue;" onclick="selectColor(event, 'DodgerBlue')"></button>
+						  <button class="color" style="background-color:MediumSeaGreen;" onclick="selectColor(event, 'MediumSeaGreen')"></button>
+						  <button class="color" style="background-color:SlateBlue;" onclick="selectColor(event, 'SlateBlue')"></button>
+						  <button class="color" style="background-color:Violet;" onclick="selectColor(event, 'Violet')"></button>
+						  <button class="color" style="background-color:LightGray;" onclick="selectColor(event, 'LightGray')"></button>
+						</div>
+				  	<div class="tab">
+				  		<div>
+				  			Select your brush type: 
+				  		</div>
+				  		<button class="brush active" onclick="selectBrush(event, 'pen')"><i class="fas fa-pen"></i></button>
+				  		<button class="brush" onclick="selectBrush(event, 'circle')"><i class="far fa-circle"></i></button>
+				  		<button class="brush" onclick="selectBrush(event, 'square')"><i class="far fa-square"></i></button>
+						  <button class="brush" onclick="selectBrush(event, '✩')"><i class="far fa-star"></i></button>
+						  <button class="brush" onclick="selectBrush(event, '★')"><i class="fas fa-star"></i></button>
+						  <button class="brush" onclick="selectBrush(event, '❆')"><i class="far fa-snowflake"></i></button>
+						  <button class="brush" onclick="selectBrush(event, '✖')"><i class="fas fa-times"></i></button>
+						  <button class="brush" onclick="selectBrush(event, '♫')"><i class="fas fa-music"></i></button>
+						  <button class="brush" onclick="selectBrush(event, '♞')"><i class="fas fa-chess-knight"></i></button>
+						  <button class="brush" onclick="selectBrush(event, '☼')"><i class="far fa-sun"></i></button>
+						</div>
+						<div class="grid-container-of-3">
+							<div>
+								<div>
+									Reset:
+								</div>
+								<button class="clear" onclick="clearCanvas()">Reset</button>
+							</div>
+							<div class="eraser-group">
+						  	<div>
+							  	Eraser:
+							  </div>
+						  	<button class="eraser" onclick="erase(event, 20)">small </button>
+						  	<button class="eraser" onclick="erase(event, 50)">medium </button>
+						  	<button class="eraser" onclick="erase(event, 80)">large </button>
+						  </div>
+						  <div>
+								<div>
+									Export:
+								</div>
+						  	<button class="export" onclick="exportCanvas()">Export</button> 
+						  </div>
+						</div>
+					</div>
+			  </li>
+			</ul>
+		</nav>
+	</header>
+	<div class="canvas">
+		<canvas id="drawing"></canvas>
+	</div>
+</body>
+<script type="text/javascript" src="/js/canvas.js"></script>
+</html>

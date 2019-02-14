@@ -26,7 +26,7 @@ const App = () => (
           <SideBar />
           <Switch>
             <Route exact path="/" component={Landing} />
-            <Route exact path="/pofolio" component={Pofolio} />
+            <Route exact path="/portfolio" component={Pofolio} />
             <Route exact path="/about" component={About} />
             <Route exact path="/category/:name" component={PostByCategory} />
             <Route path="/post/:slug" component={Post} />

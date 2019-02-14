@@ -1,0 +1,142 @@
+body {
+  background-color: #f7f2f2;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  margin-right: 2%;
+}
+
+.grid-container {
+  display: grid;
+  margin: 0 auto;
+  width: 95%;
+  grid-template-columns: 33% 37% 30%;
+}
+
+.grid-container-of-3 {
+  display: grid;
+  grid-template-columns: 20% 57% 23%;
+}
+
+.canvas {
+  text-align: center;
+}
+
+
+canvas {
+  background-color: white;
+  border: 1px solid #0000001a;
+}
+
+button {
+  background-color: white;
+  border: 1px solid #0000001a;
+  color: black;
+  padding: 8px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14 px;
+  margin: 4px 2px;
+  cursor: pointer;
+  outline: none;
+}
+
+button.clear,
+button.export {
+  font-size: 13px;
+  font-weight: 700;
+  color:white;
+  padding: 12px 12px;
+}
+
+button.clear {
+  background-color: Tomato;
+}
+
+button.export {
+  background-color: #5fb5e8;
+}
+
+button.eraser {
+  font-size: 15px;
+  padding: 11px 12px;
+}
+
+button.color {
+  padding: 17px 17px;
+  margin-top: 1.5%;
+  outline: none;
+}
+
+button.color.active{
+  outline-width: 3px;
+  outline-style: double;
+  outline-color: darkgrey;
+}
+
+button.brush{
+  font-size: 20px;
+}
+
+button.brush.active,
+button.eraser.active {
+  background-color: #ccc;
+}
+
+@media only screen and (max-width: 767px){
+  .grid-container {
+    grid-template-columns: 100%;
+    width: 100%;
+  }
+  .grid-container-of-3 {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+  }
+  button.color {
+    padding: 10px 10px;
+  }
+  button.brush {
+    padding: 2px 4px;
+    font-size: 15px;
+  }
+  button.clear,
+  button.export {
+    padding: 6px 4px;
+  }
+  button.eraser {
+    padding: 5px 10px;
+  }
+}
+
+@media only screen and (max-width: 484px){
+  .grid-container {
+    grid-template-columns: 100%;
+    width: 100%;
+  }
+  .grid-container-of-3 {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+  }
+  button.color {
+    padding: 10px 10px;
+  }
+  button.brush {
+    padding: 2px 4px;
+    font-size: 15px;
+  }
+  button.clear,
+   {
+    padding: 6px 4px;
+  }
+  button.eraser {
+    padding: 5px 10px;
+  }
+}
